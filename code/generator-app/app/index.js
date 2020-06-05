@@ -24,31 +24,11 @@ module.exports = class extends Generator {
     })
   }
   writing () {
-    // Yeoman 自动在生成文件阶段调用此方法
- 
-    // // 我们这里尝试往项目目录中写入文件
-    // this.fs.write(
-    //   this.destinationPath('temp.txt'),
-    //   Math.random().toString()
-    // )
-
-    //通过模板的方式写入文件到目标目录
-    //模板文件路径
-    // const tmpl = this.templatePath('foo.txt')
-    //输入目标路径
-    // const output = this.destinationPath('foo.txt')
-    //模板数据上下文
-    // const context = {title:"hello ykk~~",success:false}
-
-
+    const template = ["a.html",'测试.md']
     //....................................................................
     //模板文件路径
-    const tmpl = this.templatePath('bar.html')
-    //输入目标路径
-    const output = this.destinationPath('foo.html')
-    //模板数据上下文
-    const context = this.answers
-
-    this.fs.copyTpl(tmpl,output,context)
+    template.forEach(item=>{
+      this.fs.copyTpl(this.templatePath(item),this.destinationPath(item),this.answers)
+    })
   }
 }
