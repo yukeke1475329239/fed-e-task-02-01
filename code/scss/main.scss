@@ -1,0 +1,13 @@
+$body-bg:red;
+$body-color:#fff;
+body{
+  background: $body-bg;
+  color: $body-color;
+}
+h1{
+  background: $body-color;
+  color: $body-bg;
+}
+p{
+  color:plum;
+}
