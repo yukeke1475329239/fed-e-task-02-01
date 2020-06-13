@@ -4,6 +4,8 @@
   },
   "devDependencies": {
     "grunt": "^1.1.0",
+    "grunt-tasks": "^1.0.0",
+    "load-grunt-tasks": "^5.1.0",
     "sass": "^1.26.8"
   }
 }
