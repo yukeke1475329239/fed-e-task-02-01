@@ -20,7 +20,7 @@ inquirer.prompt([
   //模板目录
   const template = path.join(__dirname,'templates')
   //目标目录
-  const targetCatalog = process.cwd( )
+  const targetCatalog = process.cwd()
 
   //将模板文件目录读取到目标目录
   fs.readdir(template,(err,files)=>{
