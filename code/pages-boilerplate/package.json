@@ -25,9 +25,9 @@
   },
   "scripts": {
     "clean": "grunt clean",
+    "build": "grunt build",
     "lint": "grunt lint",
     "serve": "grunt serve",
-    "build": "grunt build",
     "start": "grunt start",
     "deploy": "grunt deploy --production"
   },
@@ -43,8 +43,13 @@
     "popper.js": "1.16.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "browser-sync": "^2.26.7",
     "grunt": "^1.1.0",
+    "grunt-babel": "^8.0.0",
     "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-jslint": "^1.1.15",
     "grunt-sass": "^3.1.0",
     "grunt-serve": "^0.1.6",
