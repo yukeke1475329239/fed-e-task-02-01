@@ -1,13 +1,12 @@
-// 实现这个项目的构建任务
-const sass = require("sass")
+const sass = require('sass')
+const loadGruntTasks = require('load-grunt-tasks')
 
-const loadGruntTasks = require("load-grunt-tasks")
 // const { loadNpmTasks } = require("grunt")
 
 module.exports = grunt =>{
   grunt.initConfig({
     clean:{
-      temp:"temp/**"
+      temp:'temp/**'
     },
     sass:{
       options:{
@@ -51,8 +50,8 @@ module.exports = grunt =>{
       }
     }
   })
-  loadGruntTasks(grunt)
+  loadGruntTasks(grunt) // 自动加载所有的 grunt 插件中的任务
 
-  grunt.registerTask('build',['sass','babel','watch'])
+  // grunt.registerTask('default', ['sass', 'babel', 'watch'])
 }
 
