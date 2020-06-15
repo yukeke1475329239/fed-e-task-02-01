@@ -38,7 +38,7 @@ const page = () =>{
 }
 const image = () =>{
   return src('src/assets/images/**',{ base: 'src' })
-    .pipe(plugins.imagemin())//模板的编译
+    .pipe(plugins.imagemin())
     .pipe(dest('dist'))
 }
 const font = () =>{
