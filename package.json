@@ -3,7 +3,7 @@
     "inquirer": "^7.1.0"
   },
   "devDependencies": {
-    "grunt": "^1.1.0",
+    "grunt": "^1.5.3",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-tasks": "^1.0.0",
     "load-grunt-tasks": "^5.1.0",
